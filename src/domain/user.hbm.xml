@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+   <hibernate-mapping>
+   	<class name="domain.User" table="user">
+   		<id name="uid" column="uid">
+   			<generator class="native"></generator>
+   		</id>
+   		<property name="nickname" column="nickname" length="20"></property>
+   		<property name="email" column="email" length="20"></property>
+   		<property name="passwd" column="passwd" length="100"></property> 		
+   		<property name="photo" column="photo" ></property>
+   		<property name="sex" column="sex" length="2"></property>
+   		<property name="birth" column="birth"></property>
+   		<property name="address" column="address" length="50"></property>
+   		<property name="introduction" column="introduction" length="50"></property>
+   		<property name="identified" column="identified" ></property>
+   		<property name="uname" column="uname" length="20"></property>
+   		<property name="idno" column="idno" length="20"></property>
+   	</class>
+   
+   </hibernate-mapping>
